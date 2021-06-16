@@ -129,7 +129,21 @@ for i in range(9):
                     break
             struct[int(full[0]) - 1][int(full[1]) - 1] = char
     if cal("x"):
-        print("X WINS ¯\_(ツ)_/¯ !!!!!")
+        print("""
+                                                              x
+
+                                                          1   2   3                                  
+                                                        +---+---+---+
+                                                   1    | {0} | {1} | {2} |
+                                                        +---+---+---+
+                                            y      2    | {3} | {4} | {5} |
+                                                        +---+---+---+
+                                                   3    | {6} | {7} | {8} |
+                                                        +---+---+---+
+                                              X WINS ¯\_(ツ)_/¯ !!!!!
+                                              """.format(struct[0][0], struct[0][1], struct[0][2], struct[1][0],
+                                                         struct[1][1],
+                                                         struct[1][2], struct[2][0], struct[2][1], struct[2][2]))
         break
     elif cal("O"):
         print("""
