@@ -154,7 +154,6 @@ while True:
             if avail(clicked_y, clicked_x):
                 struct[clicked_y][clicked_x] = "x"
                 number += 1
-                print(number)
                 if check_win("x"):
                     game_over = True
                 elif not check_win("x") and number < 9:
@@ -225,7 +224,6 @@ while True:
                     if check_win("O"):
                         game_over = True
                 draw_fig()
-            print(number)
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_r:
                 restart()
